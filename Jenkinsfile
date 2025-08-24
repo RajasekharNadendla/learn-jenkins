@@ -27,7 +27,7 @@ pipeline{
                 sh 'echo "This is Deploy"'
             }
         }
-        stage('Deploy'){
+        stage('use params'){
             steps{
                 echo "Hello ${params.PERSON}"
                 echo "Biography: ${params.BIOGRAPHY}"
