@@ -1,7 +1,7 @@
 pipeline{
     agent {label 'AGENT-1'}
     options{
-        timeout(time: 1, unit: 'SECONDS')
+        timeout(time: 30, unit: 'MINUTES')
     }
       parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
