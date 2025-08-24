@@ -29,6 +29,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 sh 'echo "This is Deploy"'
+                error 'some error failure'
             }
         }
         stage('use params'){
